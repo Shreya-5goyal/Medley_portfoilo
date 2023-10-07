@@ -14,7 +14,7 @@ class Home  extends StatelessWidget
         appBar: AppBar(
           title: Text('Portfolio App'),
           centerTitle: true,
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.purple,
         ),
         body:
         Container(
