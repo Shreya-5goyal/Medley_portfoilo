@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/navbar.dart';
 void main() => runApp(MaterialApp(
-  home:Home()
- ));
+  home:Home(),
+));
+
+
 
 class Home  extends StatelessWidget
 {
   Widget build(BuildContext context)
 {
   return Scaffold(
+
     drawer: navbar(),
     backgroundColor: Colors.white
     ,
@@ -62,43 +65,56 @@ class Home  extends StatelessWidget
                height: 30,
              ),
              Text(' Skills ',
-               style:TextStyle(
-                 fontSize: 20,
-                 fontWeight: FontWeight.bold,
-                 color:Colors.grey,
-               ),
-             ),
-              Row(
-                   children: [
-                     SizedBox(
-                       height: 20,
+                       style:TextStyle(
+                         fontSize: 20,
+                         fontWeight: FontWeight.bold,
+                         color:Colors.grey,
+                       ),
                      ),
-                     Padding(padding: EdgeInsets.all(12.0)),
-                     Icon(
-                       Icons.email,
-                       color: Colors.blue[800],
 
-                       size:30,),
-                     SizedBox(
-                       width: 20,
-                     ),
-                     Text('goelshreya12@gmail.com',
+GridView.builder(
+shrinkWrap: true,
+gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+crossAxisCount:4,),
+  itemCount: 4,
+itemBuilder: (BuildContext context, int index) {
+  final List<String> gridTexts = ['Html', 'Css', 'Java', 'C'];
+return Card(
+child: Center(
+  child: Text(gridTexts[index],
+    style:TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    color:Colors.yellow,
+  ),),
+  ),
+);
+},
+),
+             SizedBox(
+               height: 30,
+             ),
+             Row(
+                 children: [
+                   SizedBox(
+                     height: 20,
+                   ),
+                   Padding(padding: EdgeInsets.all(32.0)),
+                   Icon(
+                     Icons.email,
+                     color: Colors.blue[800],
+
+                     size:30,),
+                   Text('goelshreya12@gmail.com',
                      style: TextStyle(
                          fontSize: 15,
-                       fontWeight: FontWeight.bold,
-                       color: Colors.yellow),
-                     ),
-                     ],
+                         fontWeight: FontWeight.bold,
+                         color: Colors.yellow),
+                   ),
+                 ]),
+]
 
-             ),
-
-
-
-           ],
-         ),
-  ),
-
-      );
+  ),),);
 
 }
 }

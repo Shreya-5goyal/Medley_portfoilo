@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-class navbar  extends StatelessWidget {
+ class navbar  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child:ListView(
-        padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(accountName: Text('Shreya Goel'), accountEmail:Text('goelshreya12@gmail.com'),
           currentAccountPicture: CircleAvatar(
@@ -23,20 +22,21 @@ class navbar  extends StatelessWidget {
                 fit: BoxFit.cover,),
             ),
           ),
+
           ListTile(
             leading: Icon(Icons.favorite),
             title:Text('Favorite'),
-            onTap: ()=> null,
+            onTap: ()=> selectedItem(context, 0),
           ),
-          ListTile(
+    ListTile(
             leading: Icon(Icons.people),
             title:Text('Friends'),
-            onTap: ()=> null,
+            onTap: ()=> selectedItem(context,0)
           ),
           ListTile(
             leading: Icon(Icons.share),
             title:Text('Share'),
-            onTap: ()=> null,
+            onTap: ()=> selectedItem(context, 0),
           ),
           ListTile(
             leading: Icon(Icons.notifications),
@@ -47,22 +47,28 @@ class navbar  extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.settings),
             title:Text('Setting'),
-            onTap: ()=> null,
+            onTap: ()=> selectedItem(context, 0),
           ),
           ListTile(
             leading: Icon(Icons.policy),
             title:Text('policies'),
-            onTap: ()=> null,
+            onTap: ()=> selectedItem(context, 0),
           ),
           Divider(),
           ListTile(
             leading: Icon(Icons.exit_to_app),
             title:Text('Exit'),
-            onTap: ()=> null,
+            onTap: ()=> selectedItem(context, 0),
           ),
         ],
       ),
 
-    );
-  }
+    );}
+    void selectedItem(BuildContext context,int index)
+    {
+
+    }
+
 }
+
+
