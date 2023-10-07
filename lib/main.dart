@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-
+import 'package:untitled/navbar.dart';
 void main() => runApp(MaterialApp(
   home:Home()
  ));
 
 class Home  extends StatelessWidget
 {
-  @override
   Widget build(BuildContext context)
 {
   return Scaffold(
-    backgroundColor: Colors.grey[800],
+    drawer: navbar(),
+    backgroundColor: Colors.white
+    ,
         appBar: AppBar(
           title: Text('Portfolio App'),
           centerTitle: true,
@@ -22,11 +23,9 @@ class Home  extends StatelessWidget
            children: [
              Padding(padding: EdgeInsets.all(6.0)),
              CircleAvatar(
-               radius: 70,
+               radius: 100,
 
-               backgroundImage:AssetImage('assets/costum1-removebg-preview.png')),
-             SizedBox(
-               height: 20,
+               backgroundImage:NetworkImage('https://cdn-icons-png.flaticon.com/512/65/65581.png'),
              ),
              Text('Name',
                style:TextStyle(
@@ -85,10 +84,9 @@ class Home  extends StatelessWidget
                      ),
                      Text('goelshreya12@gmail.com',
                      style: TextStyle(
-
-                       fontSize: 15,
+                         fontSize: 15,
                        fontWeight: FontWeight.bold,
-                       color: Colors.white),
+                       color: Colors.yellow),
                      ),
                      ],
 
