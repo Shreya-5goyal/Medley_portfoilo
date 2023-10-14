@@ -13,7 +13,7 @@ class academics extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              "High School",
+              "HighSchool",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             Text("Scored 96 percentage"),

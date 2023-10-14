@@ -28,7 +28,7 @@ class Contact extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Text(
-              "Phone: 8003460803",
+              "Phone: 8003460873",
               style: TextStyle(fontSize: 20),
             ),
           ],

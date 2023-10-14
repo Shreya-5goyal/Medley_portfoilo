@@ -48,11 +48,7 @@ import 'package:untitled/academics.dart';
             title:Text('Setting'),
             onTap: ()=> selectedItem(context, 0),
           ),
-          ListTile(
-            leading: Icon(Icons.policy),
-            title:Text('Policies'),
-            onTap: ()=> selectedItem(context, 0),
-          ),
+
           Divider(),
           ListTile(
             leading: Icon(Icons.exit_to_app),

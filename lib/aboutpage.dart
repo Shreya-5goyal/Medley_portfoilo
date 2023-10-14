@@ -5,7 +5,7 @@ class aboutpage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("About Me",
+        title: Text("About me",
           style: TextStyle(fontSize: 24,
             fontWeight: FontWeight.bold,
           color: Colors.blue,),
