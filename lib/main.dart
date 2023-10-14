@@ -9,7 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MainScreen(),
+      debugShowCheckedModeBanner: false,
+      home: NextScreen(),
     );
   }
 }
@@ -18,7 +19,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Main Screen'),
+
       ),
       body: Center(
         child: Column(
@@ -26,11 +27,7 @@ class MainScreen extends StatelessWidget {
           children: <Widget>[
 
             // Your main screen content
-            Text(' Go to Portfolio Screen',
-          style:TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color:Colors.grey,),),
+
             FloatingActionButton(
 
                 onPressed: () {
@@ -41,8 +38,7 @@ class MainScreen extends StatelessWidget {
 
                 // Navigate to the next screen here
               },
-              child:
-              Text('Go'),
+
 
             ),
           ],

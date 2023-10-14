@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/aboutpage.dart';
+import 'package:untitled/Contact.dart';
+import 'package:untitled/academics.dart';
  class navbar  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,25 +27,21 @@ import 'package:flutter/material.dart';
           ),
 
           ListTile(
-            leading: Icon(Icons.favorite),
-            title:Text('Favorite'),
+            leading: Icon(Icons.people),
+            title:Text('About'),
             onTap: ()=> selectedItem(context, 0),
           ),
     ListTile(
-            leading: Icon(Icons.people),
-            title:Text('Friends'),
-            onTap: ()=> selectedItem(context,0)
+            leading: Icon(Icons.phone),
+            title:Text('Contact'),
+            onTap: ()=> selectedItem(context,1)
           ),
           ListTile(
-            leading: Icon(Icons.share),
-            title:Text('Share'),
-            onTap: ()=> selectedItem(context, 0),
+            leading: Icon(Icons.book),
+            title:Text('Academics'),
+            onTap: ()=> selectedItem(context, 2),
           ),
-          ListTile(
-            leading: Icon(Icons.notifications),
-            title:Text('Request'),
-            onTap: ()=> null,
-          ),
+
           Divider(),
           ListTile(
             leading: Icon(Icons.settings),
@@ -51,7 +50,7 @@ import 'package:flutter/material.dart';
           ),
           ListTile(
             leading: Icon(Icons.policy),
-            title:Text('policies'),
+            title:Text('Policies'),
             onTap: ()=> selectedItem(context, 0),
           ),
           Divider(),
@@ -66,9 +65,32 @@ import 'package:flutter/material.dart';
     );}
     void selectedItem(BuildContext context,int index)
     {
-
+        switch(index) {
+          case 0:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => aboutpage(),
+            ));
+            break;
+          case  1:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) =>Contact(),
+            ));
+          case  2:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) =>academics(),
+            ));
+          case  1:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => aboutpage(),
+            ));
+          case  1:
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => aboutpage(),
+            ));
+        }
+        }
     }
 
-}
+
 
 

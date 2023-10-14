@@ -5,68 +5,71 @@ class NextScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: navbar(),
-      backgroundColor: Colors.white
+      backgroundColor: Colors.blue
       ,
       appBar: AppBar(
-        title: Text('Portfolio App'),
+        title: const Text('Portfolio App'),
         centerTitle: true,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.blue,
       ),
       body:
       Container(
         child: Column(
             children: [
-              Padding(padding: EdgeInsets.all(6.0)),
-              CircleAvatar(
+              const Padding(padding: EdgeInsets.all(6.0)),
+              const CircleAvatar(
                 radius: 100,
+                backgroundImage: NetworkImage(
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Y1TZZQ1QlyVTYyPMCjZ0FtTHI_z3sThPVA&usqp=CAU',
+                                    ),
 
-                backgroundImage:NetworkImage('https://cdn-icons-png.flaticon.com/512/65/65581.png'),
               ),
-              Text('Name',
+              const Text('Name',
                 style:TextStyle(
                   fontSize: 20,
                   fontFamily: 'BlackOpsOne',
                   fontWeight: FontWeight.bold,
-                  color:Colors.grey,
+                  color:Colors.black,
                 ),
               ),
-              Text('Shreya Goel',
+              const Text('Shreya Goel',
                 style:  TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Colors.yellow,
+                  color: Colors.white,
                 ),
-              ),SizedBox(
+              ),const SizedBox(
                 height: 20,
               ),
-              Text('Designation',
+              const Text('Designation',
                 style:  TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Colors.grey,
+                  color: Colors.black,
                 ),
               ),
-              Text(' Pursuing Btech ',
+              const Text(' Pursuing Btech ',
                 style:TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color:Colors.yellow,
+                  color:Colors.white,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              Text(' Skills ',
+              const Text(
+                ' Skills ',
                 style:TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color:Colors.grey,
+                  color:Colors.white,
                 ),
               ),
 
               GridView.builder(
                 shrinkWrap: true,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount:4,),
                 itemCount: 4,
                 itemBuilder: (BuildContext context, int index) {
@@ -74,35 +77,35 @@ class NextScreen extends StatelessWidget {
                   return Card(
                     child: Center(
                       child: Text(gridTexts[index],
-                        style:TextStyle(
+                        style:const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
-                          color:Colors.yellow,
+                          color:Colors.blue,
                         ),),
                     ),
                   );
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Row(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
-                    Padding(padding: EdgeInsets.all(32.0)),
+                    const Padding(padding: EdgeInsets.all(32.0)),
 
                     Icon(
                       Icons.email,
-                      color: Colors.blue[800],
+                      color: Colors.white,
 
                       size:30,),
-                    Text('goelshreya12@gmail.com',
+                    const Text('goelshreya12@gmail.com',
                       style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
-                          color: Colors.yellow),
+                          color: Colors.white),
                     ),
                   ]),
             ]
