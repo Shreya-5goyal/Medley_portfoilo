@@ -51,7 +51,7 @@ class aboutpage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
-                'Hello, I am Shreya Goel .  I am a 19 years old'
+                'Hello, I am Shreya Goel .  I am a 19 years old. '
                 'I am pursuing btech in Ajay Kumar Garg Engineer College .'
                 'I completed my schooling from St. Thomas School.',
                 textAlign: TextAlign.center,

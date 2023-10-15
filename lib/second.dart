@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:untitled/navbar.dart';
 class NextScreen extends StatelessWidget {
+  get tabs => null;
+
   @override
   Widget build(BuildContext context) {
     return   Scaffold(
@@ -103,7 +106,11 @@ class NextScreen extends StatelessWidget {
                           color: Colors.white),
                     ),
                   ]),
+
+
             ]
-        ),),);
+        ),
+
+    ),);
   }
 }

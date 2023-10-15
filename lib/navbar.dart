@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:untitled/aboutpage.dart';
 import 'package:untitled/Contact.dart';
 import 'package:untitled/academics.dart';
+import 'package:untitled/exit.dart';
+import 'package:untitled/hobbies.dart';
 class navbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -44,17 +46,16 @@ class navbar extends StatelessWidget {
             title: Text('Academics'),
             onTap: () => selectedItem(context, 2),
           ),
-          Divider(),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Setting'),
-            onTap: () => selectedItem(context, 0),
+            leading: Icon(Icons.mic),
+            title: Text('Hobbies'),
+            onTap: () => selectedItem(context, 3),
           ),
           Divider(),
           ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Exit'),
-            onTap: () => selectedItem(context, 0),
+            onTap: () => selectedItem(context, 4),
           ),
         ],
       ),
@@ -75,13 +76,13 @@ class navbar extends StatelessWidget {
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => academics(),
         ));
-      case 1:
+      case 3:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => aboutpage(),
+          builder: (context) => hobbies(),
         ));
-      case 1:
+      case 4:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => aboutpage(),
+          builder: (context) => exit(),
         ));
     }
   }

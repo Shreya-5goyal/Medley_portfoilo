@@ -15,14 +15,14 @@ class academics extends StatelessWidget {
               "HighSchool",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            Text("Scored 96 percentage"),
+            Text("Scored 94 percentage"),
             SizedBox(height: 10),
             Text(
               "12th Board",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             Text(
-                "Scored 98 percentage and rank 2nd in Isc Board on District Level"),
+                "Scored 97 percentage in pcmb stream"),
             SizedBox(height: 10),
           ],
         ),
