@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -30,11 +31,11 @@ class MainScreen extends StatelessWidget {
 
             FloatingActionButton(
 
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => NextScreen()),
-                  );
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NextScreen()),
+                );
 
                 // Navigate to the next screen here
               },
