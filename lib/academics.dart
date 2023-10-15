@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class academics extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -22,7 +21,8 @@ class academics extends StatelessWidget {
               "12th Board",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            Text("Scored 98 percentage and rank 2nd in Isc Board on District Level"),
+            Text(
+                "Scored 98 percentage and rank 2nd in Isc Board on District Level"),
             SizedBox(height: 10),
           ],
         ),

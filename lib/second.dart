@@ -3,18 +3,17 @@ import 'package:untitled/navbar.dart';
 class NextScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return   Scaffold(
       drawer: navbar(),
-      backgroundColor: Colors.blue
-      ,
+      backgroundColor: Colors.blue,
       appBar: AppBar(
         title: const Text('Portfolio App'),
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
       body:
-      Container(
-        child: Column(
+       Container(
+        child:  Column(
             children: [
               const Padding(padding: EdgeInsets.all(6.0)),
               const CircleAvatar(
@@ -22,7 +21,6 @@ class NextScreen extends StatelessWidget {
                 backgroundImage: NetworkImage(
                   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Y1TZZQ1QlyVTYyPMCjZ0FtTHI_z3sThPVA&usqp=CAU',
                                     ),
-
               ),
               const Text('Name',
                 style:TextStyle(
@@ -66,7 +64,6 @@ class NextScreen extends StatelessWidget {
                   color:Colors.white,
                 ),
               ),
-
               GridView.builder(
                 shrinkWrap: true,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -95,11 +92,9 @@ class NextScreen extends StatelessWidget {
                       height: 20,
                     ),
                     const Padding(padding: EdgeInsets.all(32.0)),
-
                     Icon(
                       Icons.email,
                       color: Colors.white,
-
                       size:30,),
                     const Text('goelshreya12@gmail.com',
                       style: TextStyle(
@@ -109,11 +104,6 @@ class NextScreen extends StatelessWidget {
                     ),
                   ]),
             ]
-
         ),),);
-
-
-
-
   }
 }
