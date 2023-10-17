@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:untitled/navbar.dart';
 class NextScreen extends StatelessWidget {
   get tabs => null;
@@ -8,11 +7,10 @@ class NextScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return   Scaffold(
       drawer: navbar(),
-      backgroundColor: Colors.blue,
       appBar: AppBar(
-        title: const Text('Portfolio App'),
+        title: const Text('Portfolio App',
+        style: TextStyle(color: Colors.white),),
         centerTitle: true,
-        backgroundColor: Colors.blue,
       ),
       body:
        Container(
@@ -21,9 +19,7 @@ class NextScreen extends StatelessWidget {
               const Padding(padding: EdgeInsets.all(6.0)),
               const CircleAvatar(
                 radius: 100,
-                backgroundImage: NetworkImage(
-                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Y1TZZQ1QlyVTYyPMCjZ0FtTHI_z3sThPVA&usqp=CAU',
-                                    ),
+                backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Y1TZZQ1QlyVTYyPMCjZ0FtTHI_z3sThPVA&usqp=CAU'),
               ),
               const Text('Name',
                 style:TextStyle(
@@ -37,7 +33,7 @@ class NextScreen extends StatelessWidget {
                 style:  TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white,
+                  color: Colors.blue,
                 ),
               ),const SizedBox(
                 height: 20,
@@ -53,7 +49,7 @@ class NextScreen extends StatelessWidget {
                 style:TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color:Colors.white,
+                  color:Colors.blue,
                 ),
               ),
               const SizedBox(
@@ -64,7 +60,7 @@ class NextScreen extends StatelessWidget {
                 style:TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color:Colors.white,
+                  color:Colors.black,
                 ),
               ),
               GridView.builder(
@@ -97,20 +93,18 @@ class NextScreen extends StatelessWidget {
                     const Padding(padding: EdgeInsets.all(32.0)),
                     Icon(
                       Icons.email,
-                      color: Colors.white,
+                      color: Colors.black,
                       size:30,),
                     const Text('goelshreya12@gmail.com',
                       style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white),
+                          color: Colors.black),
                     ),
                   ]),
-
-
-            ]
-        ),
-
-    ),);
+            ],
+    ),
+       ),
+    );
   }
 }

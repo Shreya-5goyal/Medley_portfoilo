@@ -12,27 +12,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-class MainScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return   Scaffold(
-      appBar:  AppBar(
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            FloatingActionButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => NextScreen()),
-                );
-                },
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+
+

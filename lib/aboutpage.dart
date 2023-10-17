@@ -4,14 +4,14 @@ class aboutpage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: Text(
-          "About me",
+        title:Center(child: Text("About",
           style: TextStyle(
-            fontSize: 24,
+            fontSize:20,
             fontWeight: FontWeight.bold,
             color: Colors.blue,
           ),
         ),
+      ),
       ),
       body: Center(
         child: Column(
@@ -21,7 +21,7 @@ class aboutpage extends StatelessWidget {
               radius: 80,
               backgroundImage: NetworkImage(
                   'https://cdn-icons-png.flaticon.com/512/65/65581.png'),
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.grey,
             ),
             SizedBox(height: 20),
             Text(
@@ -36,7 +36,7 @@ class aboutpage extends StatelessWidget {
               "Flutter Developer",
               style: TextStyle(
                 fontSize: 18,
-                color: Colors.blue,
+                color: Colors.black,
               ),
             ),
             SizedBox(height: 20),
