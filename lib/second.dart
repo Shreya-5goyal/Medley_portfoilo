@@ -95,7 +95,7 @@ class NextScreen extends StatelessWidget {
                       Icons.email,
                       color: Colors.black,
                       size:30,),
-                    const Text('goelshreya12@gmail.com',
+                    const Text('goelshreya22@gmail.com',
                       style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
