@@ -15,8 +15,8 @@ class navbar extends StatelessWidget {
             accountEmail: Text('goelshreya12@gmail.com'),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
-                child: Image.network(
-                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDuHOpLcfyMRudDDlPM0CsPvwMt1UeYD5Iw&usqp=CAU',
+                child: Image.asset(
+                  'assets/nextimage.jpeg',
                   width: 100,
                   height: 100,
                   fit: BoxFit.cover,
@@ -26,8 +26,8 @@ class navbar extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.blue,
               image: DecorationImage(
-                image: NetworkImage(
-                    'https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=600'),
+                image: AssetImage(
+                    'assets/background_image.jpeg'),
                 fit: BoxFit.cover,
               ),
             ),

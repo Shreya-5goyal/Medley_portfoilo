@@ -19,7 +19,7 @@ class NextScreen extends StatelessWidget {
               const Padding(padding: EdgeInsets.all(6.0)),
               const CircleAvatar(
                 radius: 100,
-                backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Y1TZZQ1QlyVTYyPMCjZ0FtTHI_z3sThPVA&usqp=CAU'),
+                backgroundImage:AssetImage('assets/portfolioimage.jpeg'),
               ),
               const Text('Name',
                 style:TextStyle(

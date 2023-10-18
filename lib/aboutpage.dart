@@ -20,7 +20,7 @@ class aboutpage extends StatelessWidget {
             CircleAvatar(
               radius: 80,
               backgroundImage: NetworkImage(
-                  'https://cdn-icons-png.flaticon.com/512/65/65581.png'),
+                  'assets/avatar.png'),
               backgroundColor: Colors.grey,
             ),
             SizedBox(height: 20),
